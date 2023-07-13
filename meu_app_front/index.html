@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto MVP- Sprint 1</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    
+         <div class="container">
+            <p>
+             LISTA DE LIVROS      
+            </p>
+        </div>
+            
+     <!-- Opções para adicionar um novo item -->
+     <section class="newItem">
+            <div class="input-container">
+            <input type="text" id="newInput" placeholder="Digite o Título do livro">
+            <input type="text" id="newAuthor" placeholder="Digite o Autor(a) do livro">
+            <input type="text" id="newQuantity" placeholder="Digite a Quantidade">
+            <input type="text" id="newPrice" placeholder="Digite o Valor">
+
+            <button onclick="newItem()" class="addBtn">Adicionar</button>
+        </div>
+       
+    </section>
+    
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            
+            <tr>
+                <th>Título</th>
+                <th>Autor(a)</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
